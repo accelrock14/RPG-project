@@ -84,6 +84,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4703842365500306430}
+  - component: {fileID: 685151761073233866}
   m_Layer: 5
   m_Name: Inventory slot
   m_TagString: Untagged
@@ -112,6 +113,20 @@ RectTransform:
   m_AnchoredPosition: {x: -55.987183, y: 66.91461}
   m_SizeDelta: {x: 60, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &685151761073233866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4703842365500306431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b0f3346aa5fc6f44b2734b8d84d5c51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icon: {fileID: 4703842365466851292}
+  removeButton: {fileID: 4703842365571508083}
 --- !u!1 &4703842365571508085
 GameObject:
   m_ObjectHideFlags: 0
@@ -147,8 +162,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -6.7164, y: -7.6913}
-  m_SizeDelta: {x: 21, y: 21}
+  m_AnchoredPosition: {x: 3.0885, y: -6.577194}
+  m_SizeDelta: {x: 19.2171, y: 18.7716}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4703842365571508081
 CanvasRenderer:
@@ -231,7 +246,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4703842365571508082}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 685151761073233866}
+        m_TargetAssemblyTypeName: InventorySlot, Assembly-CSharp
+        m_MethodName: OnRemoveButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4703842366330725404
 GameObject:
   m_ObjectHideFlags: 0
